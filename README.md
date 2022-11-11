@@ -1,2 +1,2 @@
-# betteranonymity
+# better-anonymity
 Better anonymity configurations.
