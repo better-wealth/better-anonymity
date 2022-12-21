@@ -1,0 +1,83 @@
+# refs
+https://privacy.sexy/
+https://www.privacytools.io/
+https://www.privacyguides.org/
+https://www.privacyguides.net/
+https://anonymousplanet.org/
+
+# Software & Services
+- https://bytzvpn.com/
+- https://github.com/robbraxman/braxme
+- https://medium.com/@brax_me
+- https://whatthezuck.net/
+- https://murusfirewall.com/murus/
+- KeepassXC
+- Signal
+- Session
+- VSCodium
+
+# search
+https://searx.space/
+
+# front-end alternatives
+https://github.com/digitalblossom/alternative-frontends
+
+# tor:
+https://github.com/htrgouvea/nipe
+https://github.com/javerous/TorChat-Mac
+
+# alternatives to tor: i2p, lokinet, zeronet, freenet, etc...
+https://github.com/HelloZeroNet/ZeroNet
+https://github.com/PurpleI2P/i2pd
+https://github.com/i2p/i2p.i2p
+https://freenetproject.org/
+https://lokinet.org/
+
+# proxy broker
+https://github.com/constverum/ProxyBroker
+https://github.com/imWildCat/scylla
+
+# free proxies
+https://github.com/TheSpeedX/PROXY-List
+https://github.com/DanMcInerney/elite-proxy-finder
+https://github.com/stamparm/fetch-some-proxies
+https://github.com/malzzz/proxybrigade
+
+# proxy cannon
+https://github.com/proxycannon/proxycannon-ng
+https://github.com/audibleblink/doxycannon
+https://github.com/i128/proxyCannon
+https://github.com/i128/proxycannon-ng
+https://github.com/yg-ht/ProxyCannon-Revival
+
+# ec2 proxy
+https://github.com/alexfulsome/terraform-proxies
+https://github.com/vifreefly/ec2_proxies
+
+# lambda proxy
+https://tech.ssut.me/a-rotating-proxy-that-uses-cellular-network-cloudflare-warp-aws-lambda/
+https://ianwhitestone.work/free-python-proxy-server/
+https://aws.amazon.com/blogs/architecture/serverless-architecture-for-a-web-scraping-solution/
+https://github.com/dan-v/awslambdaproxy
+
+# ecr proxy
+https://github.com/aws-samples/container-web-scraper-example
+
+# api gateway proxy
+
+# github action proxy
+
+# cloudflare worker proxy
+
+
+# macos blackhat
+https://github.com/jgamblin/Blackhat-MacOS-Config
+
+# macos hacker
+https://github.com/mathiasbynens/dotfiles
+
+# hitchikers guide to anonymity
+https://github.com/Anon-Planet/thgtoa
+
+#misc
+https://github.com/spix-777/annNet

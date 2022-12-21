@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+# Installs Node packages.
+
+#Examples:
+#npm install --global elm-live
+#npm install --global elm-test

@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+# Installs Ruby gems.
+
+#Examples:
+#gem install asciidoctor
+#gem install benchmark-ips
+#gem install rails
+#gem install rake

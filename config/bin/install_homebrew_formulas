@@ -1,0 +1,46 @@
+#! /usr/bin/env bash
+
+# Installs Homebrew software.
+
+brew install awscli
+brew install asdf
+brew install ccache
+brew install coreutils
+brew install curl
+brew install dnscrypt-proxy
+brew install dnsmasq
+brew install gh
+brew install git
+brew install git-delta
+brew install git-filter-repo
+brew install git-sizer
+brew install gnupg
+brew install gpg
+brew install htop
+brew install jq
+brew install macvim
+brew install mas
+brew install maven
+brew install mitmproxy
+brew install node
+brew install noti
+brew install npm
+brew install onionpipe
+brew install openssh
+brew install openssl
+brew install pinentry-mac
+brew install pipenv
+brew install postgresql
+brew install privoxy
+brew install pulumi
+brew install pyenv
+brew install r
+brew install readline
+brew install sbt
+brew install scala
+brew install sqlite3
+brew install tor
+brew install torsocks
+brew install wget
+brew install xz
+brew install zlib

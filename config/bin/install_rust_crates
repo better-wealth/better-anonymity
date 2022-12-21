@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+# Installs Rust crates.
+
+#Examples:
+#cargo install jless
+#cargo install silicon

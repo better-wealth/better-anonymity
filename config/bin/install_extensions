@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+# Installs application extensions.
+
+#Examples:
+install_file "$CURL_CURLRC_EXTENSION_URL" "$CURL_CURLRC_EXTENSION_PATH"
+install_git_app "$PYENV_XXENV_EXTENSION_URL" "$PYENV_XXENV_EXTENSION_PATH"
+install_git_project "$VIM_VIMRC_EXTENSION_URL" "$VIM_VIMRC_EXTENSION_VERSION" "$VIM_VIMRC_EXTENSION_PATH" "$VIM_VIMRC_EXTENSION_SCRIPT"

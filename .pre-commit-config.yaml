@@ -1,0 +1,466 @@
+default_language_version:
+  python: python3
+
+fail_fast: false
+
+repos:
+  - repo: meta
+    hooks:
+      #- id: check-hooks-apply
+      - id: check-useless-excludes
+
+  # pre-commit-hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-ast
+      - id: check-byte-order-marker
+      - id: check-builtin-literals
+      - id: check-case-conflict
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-shebang-scripts-are-executable
+      - id: pretty-format-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-vcs-permalinks
+      - id: check-xml
+      - id: check-yaml
+      - id: debug-statements
+      - id: destroyed-symlinks
+      # - id: detect-aws-credentials
+      - id: detect-private-key
+      # - id: double-quote-string-fixer
+      - id: end-of-file-fixer
+      - id: file-contents-sorter
+      - id: fix-byte-order-marker
+      # - id: fix-encoding-pragma
+      - id: forbid-new-submodules
+      - id: forbid-submodules
+      - id: mixed-line-ending
+      - id: name-tests-test
+      # - id: no-commit-to-branch
+      - id: requirements-txt-fixer
+      - id: sort-simple-yaml
+      - id: trailing-whitespace
+
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v2.0.0
+    hooks:
+      - id: autopep8
+        args: [--in-place, --list-fixes, --recursive, --exclude="*.cfg"]
+
+  #- repo: https://github.com/asottile/pyupgrade
+  #  rev: v3.3.1
+  #  hooks:
+  #  -   id: pyupgrade
+
+  #########
+  # clang #
+  #########
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: "v15.0.6" # Use the sha / tag you want to point at
+    hooks:
+      - id: clang-format
+
+  #########
+  # cmake #
+  #########
+  - repo: https://github.com/cmake-lint/cmake-lint
+    rev: 1.4.2
+    hooks:
+      - id: cmakelint
+
+  - repo: https://github.com/cheshirekow/cmake-format-precommit
+    rev: v0.6.13
+    hooks:
+      - id: cmake-format
+      - id: cmake-lint
+
+  #######
+  # csv #
+  #######
+
+  # THIS IS BROKEN
+  #- repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
+  #  rev: v0.7.4      # or any later version
+  #  hooks:
+  #    - id: clevercsv-standardize
+
+  ##########
+  # cython #
+  ##########
+  - repo: https://github.com/MarcoGorelli/cython-lint
+    rev: v0.9.1
+    hooks:
+      - id: cython-lint
+      - id: double-quote-cython-strings
+
+  ########
+  # dart #
+  ########
+  - repo: https://github.com/fluttercommunity/import_sorter
+    rev: "f350497a11b1285c695595049e95a420068e7a9f"
+    hooks:
+      - id: dart-import-sorter # use `flutter-import-sorter` for Flutter project
+
+  #############
+  # databooks #
+  #############
+  - repo: https://github.com/datarootsio/databooks
+    rev: 1.3.7
+    hooks:
+      - id: databooks-meta
+      - id: databooks-assert
+        args: ["--expr", "--recipe", "seq-exec"]
+
+  ##############
+  # databricks #
+  ##############
+  - repo: https://github.com/inspera/blackbricks
+    rev: 1.0.1
+    hooks:
+      - id: blackbricks
+        # args: [--line-length=120]
+
+  ##########
+  # docker #
+  ##########
+  - repo: https://github.com/AleksaC/hadolint-py
+    rev: v2.10.0
+    hooks:
+      - id: hadolint
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.1-beta
+    hooks:
+      - id: hadolint-docker
+
+  ########
+  # docs #
+  ########
+  - repo: https://github.com/asottile/blacken-docs
+    rev: v1.12.1
+    hooks:
+      - id: blacken-docs
+        additional_dependencies: [black==22.12.0]
+
+  ##########
+  # dotnet #
+  ##########
+
+  #-   repo: https://github.com/dotnet/format
+  #    rev: 'v5.1.225507'
+  #    hooks:
+  #    -   id: dotnet-format
+
+  - repo: local
+    hooks:
+      #Use dotnet format already installed on your machine
+      - id: dotnet-format
+        name: dotnet-format
+        language: system
+        entry: dotnet format --include
+        types_or: ["c#", "vb"]
+
+  ##########
+  # eslint #
+  ##########
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: "v8.29.0" # Use the sha / tag you want to point at
+    hooks:
+      - id: eslint
+        files: \.[jt]sx?$ # *.js, *.jsx, *.ts and *.tsx
+        types: [file]
+
+  ###########
+  # flutter #
+  ###########
+
+  - repo: https://github.com/fluttercommunity/import_sorter
+    rev: "f350497a11b1285c695595049e95a420068e7a9f"
+    hooks:
+      - id: flutter-import-sorter # use `dart-import-sorter` for a Dart project
+
+  ######
+  # go #
+  ######
+  - repo: https://github.com/golangci/golangci-lint
+    rev: "v1.50.1"
+    hooks:
+      - id: golangci-lint
+
+  ########
+  # html #
+  ########
+  - repo: https://github.com/thibaudcolas/curlylint
+    rev: "v0.13.1" # select a tag / sha to point at
+    hooks:
+      - id: curlylint
+
+  #######
+  # ini #
+  #######
+  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: "v2.5.0"
+    hooks:
+      - id: pretty-format-ini
+        args: [--autofix]
+
+  ##############
+  # javascript #
+  ##############
+  - repo: https://github.com/pre-commit/mirrors-jshint
+    rev: "v2.13.6" # Use the sha / tag you want to point at
+    hooks:
+      - id: jshint
+
+  #########
+  # jinja #
+  #########
+  # THIS IS BROKEN
+  #-   repo: https://github.com/motet-a/jinjalint
+  #    rev: '0.5'
+  #    hooks:
+  #    -   id: jinjalint
+
+  ##########
+  # jekyll #
+  ##########
+  - repo: https://github.com/klieret/jekyll-relative-url-check
+    rev: v2.0.1
+    hooks:
+      - id: jekyll-relative-url-check-html
+      - id: jekyll-relative-url-check-markdown
+
+  ##############
+  # jsonschema #
+  ##############
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.19.2
+    hooks:
+      - id: check-jsonschema
+        files: ^data/.*\.json$
+        args: ["--schemafile", "schemas/foo.json"]
+      - id: check-metaschema
+        files: ^schemas/.*\.json$
+      - id: check-azure-pipelines
+      - id: check-bamboo-spec
+      - id: check-dependabot
+      - id: check-github-actions
+      - id: check-github-workflows
+      - id: check-gitlab-ci
+      - id: check-readthedocs
+      - id: check-renovate
+        additional_dependencies: ["pyjson5"]
+      - id: check-travis
+
+  ###########
+  # jupyter #
+  ###########
+  #- repo: https://github.com/psf/black
+  #  rev: 22.12.0
+  #  hooks:
+  #    - id: black-jupyter
+
+  ##########
+  # kotlin #
+  ##########
+  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: "v2.5.0"
+    hooks:
+      - id: pretty-format-kotlin
+        args: [--autofix]
+
+  #########
+  # local #
+  #########
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: symilar
+        language: system
+        types: [python]
+        args: [-i, --ignore-docstrings]
+      #- id: pytest
+        #name: pytest
+        #entry: pytest
+        #language: system
+        #types: [python]
+      #- id: pytest-cov
+        #name: pytest
+        #entry: pytest
+        #args:
+          #[
+            #"--cov=better_crypto",
+            #"--cov-config=.coveragerc",
+            #"--cov-report=html",
+            #"--cov-report=xml",
+            #"--cov-report=lcov",
+            #--cov-fail-under=1
+          #]
+        #language: system
+        #types: [python]
+        #pass_filenames: false
+
+  #########
+  # macOS #
+  #########
+  - repo: https://github.com/homebysix/pre-commit-macadmin
+    rev: v1.12.3
+    hooks:
+      - id: check-git-config-email
+        args: ["--domains", "gmail.com", "johnpatrickroach.com"]
+      - id: check-plists
+      #-   id: check-munkipkg-buildinfo # https://www.munki.org/munki/
+      - id: check-outset-scripts # https://github.com/chilcote/outset/wiki
+      - id: check-autopkg-recipe-list # http://autopkg.github.io/autopkg/
+      - id: check-autopkg-recipes # http://autopkg.github.io/autopkg/
+        args: ["--strict"]
+      - id: forbid-autopkg-overrides # http://autopkg.github.io/autopkg/
+      - id: forbid-autopkg-trust-info # http://autopkg.github.io/autopkg/
+    #-   id: check-jamf-extension-attributes
+    #-   id: check-jamf-scripts
+    #-   id: check-jamf-profiles
+    #-   id: check-munki-pkgsinfo # https://www.munki.org/munki/
+    #-   id: check-munkiadmin-scripts # https://www.munki.org/munki/
+    #-   id: munki-makecatalogs # https://www.munki.org/munki/
+    #-   id: check-munki-pkgsinfo # https://www.munki.org/munki/
+    #-   id: check-munki-pkgsinfo # https://www.munki.org/munki/
+
+  #######
+  # pip #
+  #######
+  - repo: https://github.com/peterdemin/pip-compile-multi
+    rev: v2.6.1
+    hooks:
+      - id: pip-compile-multi-verify
+
+  ########
+  # pocc #
+  ########
+
+  - repo: https://github.com/pocc/pre-commit-hooks
+    rev: v1.3.5
+    hooks:
+      - id: clang-format
+        args: [--style=Google]
+      - id: clang-tidy
+      - id: oclint
+      - id: uncrustify
+      - id: cppcheck
+      - id: cpplint
+      - id: include-what-you-use
+
+  ##########
+  # python #
+  ##########
+
+  - repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        exclude: ^docs/|setup.py
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.11.2
+    hooks:
+      - id: isort
+        args: [--float-to-top, --profile black]
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.991
+    hooks:
+      - id: mypy
+        args: [--install-types, --non-interactive]
+        pass_filenames: false
+
+  ########
+  # ruby #
+  ########
+  - repo: https://github.com/mattlqx/pre-commit-ruby
+    rev: v1.3.5
+    hooks:
+      - id: rubocop
+      - id: foodcritic
+      - id: cookstyle
+      - id: rspec
+      - id: chef-cookbook-version
+
+  ########
+  # rust #
+  ########
+  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: "v2.5.0"
+    hooks:
+      - id: pretty-format-rust
+        args: [--autofix]
+
+  ############
+  # sourcery #
+  ############
+  - repo: https://github.com/sourcery-ai/sourcery
+    rev: v1.0.2
+    hooks:
+      - id: sourcery
+        # The best way to use Sourcery in a pre-commit hook:
+        # * review only changed lines:
+        # * omit the summary
+        args: [--diff=git diff HEAD, --no-summary]
+
+  ########
+  # toml #
+  ########
+  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: "v2.5.0"
+    hooks:
+      - id: pretty-format-toml
+        args: [--autofix]
+
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.5.3
+    hooks:
+      - id: nbqa-pyupgrade
+        args: [--py37-plus]
+      - id: nbqa-mypy
+        args: [--install-types, --non-interactive]
+
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.9.0 # Use the ref you want to point at
+    hooks:
+      - id: python-use-type-annotations
+      - id: python-check-blanket-noqa
+      - id: python-check-blanket-type-ignore
+      - id: python-check-mock-methods
+      - id: python-no-eval
+      - id: python-no-log-warn
+      - id: python-use-type-annotations
+      - id: rst-backticks
+      - id: rst-directive-colons
+      - id: rst-inline-touching-normal
+      - id: text-unicode-replacement-char
+
+  ##########
+  # safety #
+  ##########
+  #- repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+  #  rev: v1.3.0
+  #  hooks:
+  #    - id: python-safety-dependencies-check
+  #      args: [--disable-telemetry, --short-report]
+
+  ########
+  # yaml #
+  ########
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.28.0
+    hooks:
+      - id: yamllint

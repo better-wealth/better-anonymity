@@ -1,0 +1,79 @@
+#! /usr/bin/env bash
+
+# Executes the command line interface.
+
+source lib/installers.sh
+source lib/options.sh
+source lib/reinstallers.sh
+source lib/settings.sh
+source lib/uninstallers.sh
+source lib/utilities.sh
+source lib/verifiers.sh
+
+if [[ -e "$MAC_OS_CONFIG_PATH" ]]; then
+  source "$MAC_OS_CONFIG_PATH/lib/settings.sh"
+else
+  printf "ERROR: Unable to load macOS configuration: $MAC_OS_CONFIG_PATH.\n\n"
+  printf "Please check the following before continuing:\n"
+  printf "  • Download the default macOS configuration here: https://github.com/\n"
+  printf "  • Customize as necessary for your setup or fork the project and make your own configuration.\n"
+  printf "  • When finished, your folder structure should look like this:\n"
+  printf "    • <root path>/env:\n"
+  printf "    • <root path>/env-config:\n"
+  exit 1
+fi
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.env/bin/run` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+configure_environment
+
+while true; do
+  if [[ $# == 0 ]]; then
+    printf "\nUsage: run OPTION\n"
+    printf "\nOSX Options:\n"
+    printf "  Boot:\n"
+    printf "     B:  Create boot disk.\n"
+    printf "  Install:\n"
+    printf "     b:  Apply basic settings.\n"
+    printf "     t:  Install development tools.\n"
+    printf "    ht:  Tap Homebrew.\n"
+    printf "    hf:  Install Homebrew Formulas.\n"
+    printf "    hc:  Install Homebrew Casks.\n"
+    printf "     m:  Install Mac App Store software.\n"
+    printf "     a:  Install application software.\n"
+    printf "     x:  Install application software extensions.\n"
+    printf "    df:  Install dotfiles.\n"
+    printf "    np:  Install Node packages.\n"
+    printf "    rg:  Install Ruby gems.\n"
+    printf "    rc:  Install Rust crates.\n"
+    printf "     d:  Apply default settings.\n"
+    printf "    cs:  Configure installed software.\n"
+    printf "     i:  Install all (i.e. executes all of the above steps in order listed).\n"
+    printf "  Restore:\n"
+    printf "     R:  Restore settings from backup.\n"
+    printf "  Manage:\n"
+    printf "     c:  Check status of managed software.\n"
+    printf "     C:  Caffeinate machine.\n"
+    printf "    ua:  Uninstall application software.\n"
+    printf "    ux:  Uninstall application software extension.\n"
+    printf "    ra:  Reinstall application software.\n"
+    printf "    rx:  Reinstall application software extension.\n"
+    printf "     w:  Clean work (temp) directory.\n"
+    printf "     q:  Quit/Exit.\n\n"
+    read -p "Enter selection: " response
+    printf "\n"
+    process_option $response
+  else
+    process_option $1
+  fi
+
+  break
+done

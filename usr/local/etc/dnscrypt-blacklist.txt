@@ -1,0 +1,103 @@
+###########################
+#        Blacklist        #
+###########################
+
+## Rules for name-based query blocking, one per line
+##
+## Example of valid patterns:
+##
+## ads.*         | matches anything with an "ads." prefix
+## *.example.com | matches example.com and all names within that zone such as www.example.com
+## example.com   | identical to the above
+## *sex*         | matches any name containing that substring
+## ads[0-9]*     | matches "ads" followed by one or more digits
+## ads*.example* | *, ? and [] can be used anywhere, but prefixes/suffixes are faster
+
+ad.*
+ad.*.*.*
+ads.*
+ads[0-9]*
+*analytics*
+banner.*
+banners.*
+creatives.*
+oas.*
+oascentral.*
+stats.*
+tag.*
+telemetry.*
+tracker.*
+*.local.*
+*.eth0.me
+*.workgroup
+*sex*
+*.adbrite.*
+adclick.*
+adfarm.*
+adrevolver.*
+adserver.*
+adtech.*
+advert.*
+atdmt.*
+atwola.*
+*.banner
+*.bizrate
+*.blogads
+*.bluestreak
+*.burstnet
+*.casalemedia
+*.coremetrics
+*.doubleclick.*
+falkag.*
+*.fastclick.*
+*.feedstermedia
+*.qualitrics.com
+*.spylog.com*
+[g,s,t].symc[b,d].com
+[g,s,t]][1,2,b,d,e,f,g,h,i,j,k,l,m,n,p,r,s,t,u,v,w,z].symc.[b,d].com
+*.googlesyndication.*
+*.hitbox.*
+*.httpads.*
+*.imiclk.*
+intellitxt.*
+js.overture.*
+kanoodle.*
+kontera.*
+mediaplex.*
+nextag.*
+pointroll.*
+qksrv.*
+rightmedia.*
+speedera.*
+statcounter.*
+tribalfusion.*
+webtrends.*
+googletagservices.*
+[a-zA-Z0-9]{4}/$script.*
+*.a-msedge.net
+*.adnxs.com
+*.ads*.msads.net
+*.ads*.msn.com
+*.ams*.msecn.net
+*.atdmt.com
+*.dc-msedge.net
+*.glbdns2.microsoft.com
+*.location.live.net
+*.msedge.net
+*.rad.msn.com
+*.rads.msn.com
+*.services.social.microsoft.com
+*.telemetry.microsoft.com
+*.telemetry.mozilla.org
+*.trafficmanager.net
+*.virtualearth.net
+*vortex*
+
+
+## Time-based rules
+
+#facebook.com @work
+#reddit.com @time-to-sleep
+#*.twitter.com @time-to-sleep
+#*.youtube.*  @time-to-sleep
+

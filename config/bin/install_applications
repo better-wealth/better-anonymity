@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+# Installs applications.
+
+install_dmg_app "$DOCKER_APP_URL" "$DOCKER_VOLUME_NAME" "$DOCKER_APP_NAME"
+install_dmg_pkg "$GPG_KEYCHAIN_APP_URL" "$GPG_KEYCHAIN_VOLUME_NAME" "$GPG_KEYCHAIN_APP_NAME"
+install_zip_app "$POSTMAN_APP_URL" "$POSTMAN_APP_NAME"

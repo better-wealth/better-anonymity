@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+# Installs App Store software.
+
+
+#Examples:
+
+# Slack
+#mas install 803453959
+
+# WiFi Explorer
+#mas install 494803304

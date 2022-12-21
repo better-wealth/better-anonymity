@@ -1,0 +1,21 @@
+#! /usr/bin/env bash
+
+Installs development tooling requirements.
+
+if [[ -z "$MAC_OS_XCODE_ACTIVE_DEVELOPER_DIRECTORY_PATH" ]]; then
+  printf "Installing Xcode CLI tools...\n"
+  xcode-select --install
+
+  printf "%s\n" "💡 ALT+TAB to view and accept Xcode license window."
+  read -p "Have you completed the Xcode CLI tools install (y/n)? " xcode_response
+  if [[ "$xcode_response" != "y" ]]; then
+    printf "ERROR: Xcode CLI tools must be installed before proceeding.\n"
+    exit 1
+  fi
+else
+  printf "Xcode command line tools already installed...\n"
+fi
+
+if [[ "$(/usr/bin/arch)" == "arm64" ]]; then
+  softwareupdate --install-rosetta --agree-to-license
+fi

@@ -1,0 +1,17 @@
+# https://github.com/drduh/config/blob/master/gitconfig
+[user]
+	name = johnpatrickroach
+	email = contact@johnpatrickroach.com
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	pager = less -XRF
+[remote "origin"]
+	#url = https://github.com/johnpatrickroach/config
+	url = git@github.com:johnpatrickroach/config.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

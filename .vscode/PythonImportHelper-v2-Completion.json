@@ -1,0 +1,569 @@
+[
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "types",
+        "description": "types",
+        "detail": "types",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "plistlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plistlib",
+        "description": "plistlib",
+        "detail": "plistlib",
+        "documentation": {}
+    },
+    {
+        "label": "xlwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xlwt",
+        "description": "xlwt",
+        "detail": "xlwt",
+        "documentation": {}
+    },
+    {
+        "label": "Workbook",
+        "importPath": "xlwt",
+        "description": "xlwt",
+        "isExtraImport": true,
+        "detail": "xlwt",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "Template",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "groupby",
+        "importPath": "itertools",
+        "description": "itertools",
+        "isExtraImport": true,
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "namedtuple",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "MacSecurityRule",
+        "kind": 6,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "class MacSecurityRule():\n    def __init__(self, title, rule_id, severity, discussion, check, fix, cci, cce, nist_controls, disa_stig, srg, tags, result_value, mobileconfig, mobileconfig_info):\n        self.rule_title = title\n        self.rule_id = rule_id\n        self.rule_severity = severity\n        self.rule_discussion = discussion\n        self.rule_check = check\n        self.rule_fix = fix\n        self.rule_cci = cci\n        self.rule_cce = cce",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "get_rule_yaml",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "def get_rule_yaml(rule_file, custom=False):\n    \"\"\" Takes a rule file, checks for a custom version, and returns the yaml for the rule\n    \"\"\"\n    resulting_yaml = {}\n    names = [os.path.basename(x) for x in glob.glob('../custom/rules/**/*.yaml', recursive=True)]\n    file_name = os.path.basename(rule_file)\n    # if file_name in names:\n    #     print(f\"Custom settings found for rule: {rule_file}\")\n    #     try:\n    #         override_path = glob.glob('../custom/rules/**/{}'.format(file_name), recursive=True)[0]",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "collect_rules",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "def collect_rules():\n    \"\"\"Takes a baseline yaml file and parses the rules, returns a list of containing rules\n    \"\"\"\n    all_rules = []\n    #expected keys and references\n    keys = ['mobileconfig',\n            'macOS',\n            'severity',\n            'title',\n            'check',",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "create_args",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "def create_args():\n    \"\"\"configure the arguments used in the script, returns the parsed arguments\n    \"\"\"\n    parser = argparse.ArgumentParser(\n        description='Given a keyword tag, generate a generic baseline.yaml file containing rules with the tag.')\n    parser.add_argument(\"-c\", \"--controls\", default=None,\n                        help=\"Output the 800-53 controls covered by the rules.\", action=\"store_true\")\n    parser.add_argument(\"-k\", \"--keyword\", default=None,\n                        help=\"Keyword tag to collect rules containing the tag.\", action=\"store\")\n    parser.add_argument(\"-l\", \"--list_tags\", default=None,",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "section_title",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "def section_title(section_name):\n    titles = {\n        \"auth\": \"authentication\",\n        \"audit\": \"auditing\",\n        \"os\": \"macos\",\n        \"pwpolicy\": \"passwordpolicy\",\n        \"icloud\": \"icloud\",\n        \"sysprefs\": \"systempreferences\",\n        \"srg\": \"srg\"\n    }",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "get_controls",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "def get_controls(all_rules):\n    all_controls = []\n    for rule in all_rules:\n        for control in rule.rule_80053r4:\n            if control not in all_controls:\n                all_controls.append(control)\n    all_controls.sort()\n    return all_controls\ndef available_tags(all_rules):\n    all_tags = []",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "available_tags",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "def available_tags(all_rules):\n    all_tags = []\n    for rule in all_rules:\n        for tag in rule.rule_tags:\n            all_tags.append(tag)\n    available_tags = []\n    for tag in all_tags:\n        if tag not in available_tags:\n            available_tags.append(tag)\n    available_tags.append(\"all_rules\")",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "output_baseline",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "def output_baseline(rules, os, keyword):\n    inherent_rules = []\n    permanent_rules = []\n    na_rules = []\n    supplemental_rules = []\n    other_rules = []\n    sections = []\n    output_text = \"\"\n    for rule in rules:\n        if \"inherent\" in rule.rule_tags:",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_baseline",
+        "description": "docs.scripts.generate_baseline",
+        "peekOfCode": "def main():\n    args = create_args()\n    try:\n        # output_basename = os.path.basename(args.baseline.name)\n        # output_filename = os.path.splitext(output_basename)[0]\n        # baseline_name = os.path.splitext(output_basename)[0].capitalize()\n        file_dir = os.path.dirname(os.path.abspath(__file__))\n        parent_dir = os.path.dirname(file_dir)\n        # stash current working directory\n        original_working_directory = os.getcwd()",
+        "detail": "docs.scripts.generate_baseline",
+        "documentation": {}
+    },
+    {
+        "label": "MacSecurityRule",
+        "kind": 6,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "class MacSecurityRule():\n    def __init__(self, title, rule_id, severity, discussion, check, fix, cci, cce, nist_controls, nist_171, disa_stig, srg, cis, custom_refs, tags, result_value, mobileconfig, mobileconfig_info, customized):\n        self.rule_title = title\n        self.rule_id = rule_id\n        self.rule_severity = severity\n        self.rule_discussion = discussion\n        self.rule_check = check\n        self.rule_fix = fix\n        self.rule_cci = cci\n        self.rule_cce = cce",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "AdocTemplate",
+        "kind": 6,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "class AdocTemplate:\n    def __init__(self, name, path, template_file):\n        self.name = name\n        self.path = path\n        self.template_file = template_file\nclass PayloadDict:\n    \"\"\"Class to create and manipulate Configuration Profiles.\n    The actual plist content can be accessed as a dictionary via the 'data' attribute.\n    \"\"\"\n    def __init__(self, identifier, uuid=False, removal_allowed=False, description='', organization='', displayname=''):",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "PayloadDict",
+        "kind": 6,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "class PayloadDict:\n    \"\"\"Class to create and manipulate Configuration Profiles.\n    The actual plist content can be accessed as a dictionary via the 'data' attribute.\n    \"\"\"\n    def __init__(self, identifier, uuid=False, removal_allowed=False, description='', organization='', displayname=''):\n        self.data = {}\n        self.data['PayloadVersion'] = 1\n        self.data['PayloadOrganization'] = organization\n        if uuid:\n            self.data['PayloadUUID'] = uuid",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "ulify",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def ulify(elements):\n    string = \"\\n\"\n    for s in elements:\n        string += \"* \" + str(s) + \"\\n\"\n    return string\ndef group_ulify(elements):\n    string = \"\\n * \"\n    for s in elements:\n        string += str(s) + \", \"\n    return string[:-2]",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "group_ulify",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def group_ulify(elements):\n    string = \"\\n * \"\n    for s in elements:\n        string += str(s) + \", \"\n    return string[:-2]\ndef group_ulify_comment(elements):\n    string = \"\\n * \"\n    for s in elements:\n        string += str(s) + \", \"\n    return string[:-2]",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "group_ulify_comment",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def group_ulify_comment(elements):\n    string = \"\\n * \"\n    for s in elements:\n        string += str(s) + \", \"\n    return string[:-2]\ndef get_check_code(check_yaml):\n    try:\n        check_string = check_yaml.split(\"[source,bash]\")[1]\n    except:\n        return check_yaml",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "get_check_code",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def get_check_code(check_yaml):\n    try:\n        check_string = check_yaml.split(\"[source,bash]\")[1]\n    except:\n        return check_yaml\n    #print check_string\n    check_code = re.search('(?:----((?:.*?\\r?\\n?)*)----)+', check_string)\n    #print(check_code.group(1).rstrip())\n    return(check_code.group(1).strip())\ndef quotify(fix_code):",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "quotify",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def quotify(fix_code):\n    string = fix_code.replace(\"'\", \"\\'\\\"\\'\\\"\\'\")\n    string = string.replace(\"%\", \"%%\")\n    return string\ndef get_fix_code(fix_yaml):\n    fix_string = fix_yaml.split(\"[source,bash]\")[1]\n    fix_code = re.search('(?:----((?:.*?\\r?\\n?)*)----)+', fix_string)\n    return(fix_code.group(1))\ndef format_mobileconfig_fix(mobileconfig):\n    \"\"\"Takes a list of domains and setting from a mobileconfig, and reformats it for the output of the fix section of the guide.",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "get_fix_code",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def get_fix_code(fix_yaml):\n    fix_string = fix_yaml.split(\"[source,bash]\")[1]\n    fix_code = re.search('(?:----((?:.*?\\r?\\n?)*)----)+', fix_string)\n    return(fix_code.group(1))\ndef format_mobileconfig_fix(mobileconfig):\n    \"\"\"Takes a list of domains and setting from a mobileconfig, and reformats it for the output of the fix section of the guide.\n    \"\"\"\n    rulefix = \"\"\n    for domain, settings in mobileconfig.items():\n        if domain == \"com.apple.ManagedClient.preferences\":",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "format_mobileconfig_fix",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def format_mobileconfig_fix(mobileconfig):\n    \"\"\"Takes a list of domains and setting from a mobileconfig, and reformats it for the output of the fix section of the guide.\n    \"\"\"\n    rulefix = \"\"\n    for domain, settings in mobileconfig.items():\n        if domain == \"com.apple.ManagedClient.preferences\":\n            rulefix = rulefix + \\\n                (f\"NOTE: The following settings are in the ({domain}) payload. This payload requires the additional settings to be sub-payloads within, containing their their defined payload types.\\n\\n\")\n            rulefix = rulefix + format_mobileconfig_fix(settings)\n        else:",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "makeNewUUID",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def makeNewUUID():\n    return str(uuid4())\ndef concatenate_payload_settings(settings):\n    \"\"\"Takes a list of dictionaries, removed duplicate entries and concatenates an array of settings for the same key\n    \"\"\"\n    settings_list = []\n    settings_dict = {}\n    for item in settings:\n        for key, value in item.items():\n            if isinstance(value, list):",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "concatenate_payload_settings",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def concatenate_payload_settings(settings):\n    \"\"\"Takes a list of dictionaries, removed duplicate entries and concatenates an array of settings for the same key\n    \"\"\"\n    settings_list = []\n    settings_dict = {}\n    for item in settings:\n        for key, value in item.items():\n            if isinstance(value, list):\n                settings_dict.setdefault(key, []).append(value[0])\n            else:",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "generate_profiles",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def generate_profiles(baseline_name, build_path, parent_dir, baseline_yaml, signing, hash=''):\n    \"\"\"Generate the configuration profiles for the rules in the provided baseline YAML file\n    \"\"\"\n    organization = \"macOS Security Compliance Project\"\n    displayname = f\"macOS {baseline_name} Baseline settings\"\n    # import profile_manifests.plist\n    manifests_file = os.path.join(\n        parent_dir, 'includes', 'supported_payloads.yaml')\n    with open(manifests_file) as r:\n        manifests = yaml.load(r, Loader=yaml.SafeLoader)",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "default_audit_plist",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def default_audit_plist(baseline_name, build_path, baseline_yaml):\n    \"\"\"\"Generate the default audit plist file to define exemptions\n    \"\"\"\n    # Output folder\n    plist_output_path = os.path.join(\n        f'{build_path}', 'preferences')\n    if not (os.path.isdir(plist_output_path)):\n        try:\n            os.makedirs(plist_output_path)\n        except OSError:",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "generate_script",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def generate_script(baseline_name, build_path, baseline_yaml, reference):\n    \"\"\"Generates the zsh script from the rules in the baseline YAML\n    \"\"\"\n    compliance_script_file = open(\n        build_path + '/' + baseline_name + '_compliance.sh', 'w')\n    check_function_string = \"\"\n    fix_function_string = \"\"\n    # create header of fix zsh script\n    check_zsh_header = f\"\"\"#!/bin/zsh\n##  This script will attempt to audit all of the settings based on the installed profile.",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "get_rule_yaml",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def get_rule_yaml(rule_file, custom=False):\n    \"\"\" Takes a rule file, checks for a custom version, and returns the yaml for the rule\n    \"\"\"\n    resulting_yaml = {}\n    names = [os.path.basename(x) for x in glob.glob('../custom/rules/**/*.yaml', recursive=True)]\n    file_name = os.path.basename(rule_file)\n    # if file_name in names:\n    #     print(f\"Custom settings found for rule: {rule_file}\")\n    #     try:\n    #         override_path = glob.glob('../custom/rules/**/{}'.format(file_name), recursive=True)[0]",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "generate_xls",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def generate_xls(baseline_name, build_path, baseline_yaml):\n    \"\"\"Using the baseline yaml file, create an XLS document containing the YAML fields\n    \"\"\"\n    baseline_rules = create_rules(baseline_yaml)\n    # File path setup\n    file_dir = os.path.dirname(os.path.abspath(__file__))\n    parent_dir = os.path.dirname(file_dir)\n    # Output files\n    xls_output_file = f\"{build_path}/{baseline_name}.xls\"\n    wb = Workbook()",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "create_rules",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def create_rules(baseline_yaml):\n    \"\"\"Takes a baseline yaml file and parses the rules, returns a list of containing rules\n    \"\"\"\n    all_rules = []\n    #expected keys and references\n    keys = ['mobileconfig',\n            'macOS',\n            'severity',\n            'title',\n            'check',",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "create_args",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def create_args():\n    \"\"\"configure the arguments used in the script, returns the parsed arguements\n    \"\"\"\n    parser = argparse.ArgumentParser(\n        description='Given a baseline, create guidance documents and files.')\n    parser.add_argument(\"baseline\", default=None,\n                        help=\"Baseline YAML file used to create the guide.\", type=argparse.FileType('rt'))\n    parser.add_argument(\"-c\", \"--clean\", default=None,\n                        help=argparse.SUPPRESS, action=\"store_true\")\n    parser.add_argument(\"-d\", \"--debug\", default=None,",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "is_asciidoctor_installed",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def is_asciidoctor_installed():\n    \"\"\"Checks to see if the ruby gem for asciidoctor is installed\n    \"\"\"\n    #cmd = \"gem list asciidoctor -i\"\n    cmd = \"which asciidoctor\"\n    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)\n    output, error = process.communicate()\n    # return path to asciidoctor\n    return output.decode(\"utf-8\").strip()\ndef is_asciidoctor_pdf_installed():",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "is_asciidoctor_pdf_installed",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def is_asciidoctor_pdf_installed():\n    \"\"\"Checks to see if the ruby gem for asciidoctor-pdf is installed\n    \"\"\"\n    #cmd = \"gem list asciidoctor-pdf -i\"\n    cmd = \"which asciidoctor-pdf\"\n    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)\n    output, error = process.communicate()\n    return output.decode(\"utf-8\").strip()\ndef verify_signing_hash(hash):\n    \"\"\"Attempts to validate the existence of the certificate provided by the hash",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "verify_signing_hash",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def verify_signing_hash(hash):\n    \"\"\"Attempts to validate the existence of the certificate provided by the hash\n    \"\"\"\n    with tempfile.NamedTemporaryFile(mode=\"w\") as in_file:\n        unsigned_tmp_file_path=in_file.name\n        in_file.write(\"temporary file for signing\")\n        cmd = f\"security cms -S -Z {hash} -i {unsigned_tmp_file_path}\"\n        FNULL = open(os.devnull, 'w')\n        process = subprocess.Popen(cmd.split(), stdout=FNULL, stderr=FNULL)\n        output, error = process.communicate()",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "sign_config_profile",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def sign_config_profile(in_file, out_file, hash):\n    \"\"\"Signs the configuration profile using the identity associated with the provided hash\n    \"\"\"\n    cmd = f\"security cms -S -Z {hash} -i {in_file} -o {out_file}\"\n    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)\n    output, error = process.communicate()\n    print(f\"Signed Configuration profile written to {out_file}\")\n    return output.decode(\"utf-8\")\ndef parse_custom_references(reference):\n    string = \"\\n\"",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "parse_custom_references",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def parse_custom_references(reference):\n    string = \"\\n\"\n    for item in reference:\n        if isinstance(reference[item], list):\n            string += \"!\" + str(item) + \"\\n!\\n\"\n            for i in reference[item]:\n                string += \"* \" + str(i) + \"\\n\"\n        else:\n            string += \"!\" + str(item) + \"!* \" + str(reference[item]) + \"\\n\"\n    return string",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "parse_cis_references",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def parse_cis_references(reference):\n    string = \"\\n\"\n    for item in reference:\n        if isinstance(reference[item], list):\n            string += \"!CIS \" + str(item).title() + \"\\n!\\n\"\n            string += \"* \"\n            for i in reference[item]:\n                string += str(i) + \", \"\n            string = string[:-2] + \"\\n\"\n        else:",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_guidance",
+        "description": "docs.scripts.generate_guidance",
+        "peekOfCode": "def main():\n    args = create_args()\n    if args.debug:\n        logging.basicConfig(level=logging.DEBUG)\n    else:\n        logging.basicConfig(level=logging.WARNING)\n    try:\n        output_basename = os.path.basename(args.baseline.name)\n        output_filename = os.path.splitext(output_basename)[0]\n        baseline_name = os.path.splitext(output_basename)[0]#.capitalize()",
+        "detail": "docs.scripts.generate_guidance",
+        "documentation": {}
+    },
+    {
+        "label": "sort_nicely",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_mapping",
+        "description": "docs.scripts.generate_mapping",
+        "peekOfCode": "def sort_nicely( l ):\n# \"\"\" Sort the given list in the way that humans expect.\n# \"\"\"\n    convert = lambda text: int(text) if text.isdigit() else text\n    alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ]\n    l.sort( key=alphanum_key )\ndef main():\n    file_dir = os.path.dirname(os.path.abspath(__file__))\n    os.chdir(file_dir)    \n    nist_header = \"\"",
+        "detail": "docs.scripts.generate_mapping",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_mapping",
+        "description": "docs.scripts.generate_mapping",
+        "peekOfCode": "def main():\n    file_dir = os.path.dirname(os.path.abspath(__file__))\n    os.chdir(file_dir)    \n    nist_header = \"\"\n    other_header = \"\"\n    sub_directory = \"\"\n    def dir_path(string):\n        if os.path.isdir(string):\n            return string\n        else:",
+        "detail": "docs.scripts.generate_mapping",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "docs.scripts.generate_oval",
+        "description": "docs.scripts.generate_oval",
+        "peekOfCode": "def main():\n    now = datetime.now()\n    date_time_string = now.strftime(\"%Y-%m-%dT%H:%M:%S\")\n    output = \"\"\n    parser = argparse.ArgumentParser(description='Given a profile, create oval checks.')\n    parser.add_argument(\"baseline\", default=None, help=\"Baseline YAML file used to create the oval.\", type=argparse.FileType('rt'))\n    results = parser.parse_args()\n    try:\n        output_basename = os.path.basename(results.baseline.name)\n        output_filename = os.path.splitext(output_basename)[0]",
+        "detail": "docs.scripts.generate_oval",
+        "documentation": {}
+    }
+]
