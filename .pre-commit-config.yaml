@@ -11,7 +11,7 @@ repos:
 
   # pre-commit-hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
       - id: check-added-large-files
       - id: check-ast
@@ -47,8 +47,8 @@ repos:
       - id: sort-simple-yaml
       - id: trailing-whitespace
 
-  - repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v2.0.0
+  - repo: https://github.com/hhatto/autopep8
+    rev: v2.3.1
     hooks:
       - id: autopep8
         args: [--in-place, --list-fixes, --recursive, --exclude="*.cfg"]
@@ -62,7 +62,7 @@ repos:
   # clang #
   #########
   - repo: https://github.com/pre-commit/mirrors-clang-format
-    rev: "v15.0.6" # Use the sha / tag you want to point at
+    rev: "v19.1.2" # Use the sha / tag you want to point at
     hooks:
       - id: clang-format
 
@@ -70,7 +70,7 @@ repos:
   # cmake #
   #########
   - repo: https://github.com/cmake-lint/cmake-lint
-    rev: 1.4.2
+    rev: 1.4.3
     hooks:
       - id: cmakelint
 
@@ -94,7 +94,7 @@ repos:
   # cython #
   ##########
   - repo: https://github.com/MarcoGorelli/cython-lint
-    rev: v0.9.1
+    rev: v0.16.2
     hooks:
       - id: cython-lint
       - id: double-quote-cython-strings
@@ -103,7 +103,7 @@ repos:
   # dart #
   ########
   - repo: https://github.com/fluttercommunity/import_sorter
-    rev: "f350497a11b1285c695595049e95a420068e7a9f"
+    rev: "641f363d40a4ffb42ab577a43433fc48c5059b19"
     hooks:
       - id: dart-import-sorter # use `flutter-import-sorter` for Flutter project
 
@@ -111,7 +111,7 @@ repos:
   # databooks #
   #############
   - repo: https://github.com/datarootsio/databooks
-    rev: 1.3.7
+    rev: 1.3.10
     hooks:
       - id: databooks-meta
       - id: databooks-assert
@@ -121,7 +121,7 @@ repos:
   # databricks #
   ##############
   - repo: https://github.com/inspera/blackbricks
-    rev: 1.0.1
+    rev: 2.1.3
     hooks:
       - id: blackbricks
         # args: [--line-length=120]
@@ -130,11 +130,11 @@ repos:
   # docker #
   ##########
   - repo: https://github.com/AleksaC/hadolint-py
-    rev: v2.10.0
+    rev: v2.12.1b3
     hooks:
       - id: hadolint
   - repo: https://github.com/hadolint/hadolint
-    rev: v2.12.1-beta
+    rev: v2.13.1-beta
     hooks:
       - id: hadolint-docker
 
@@ -142,7 +142,7 @@ repos:
   # docs #
   ########
   - repo: https://github.com/asottile/blacken-docs
-    rev: v1.12.1
+    rev: 1.19.0
     hooks:
       - id: blacken-docs
         additional_dependencies: [black==22.12.0]
@@ -169,7 +169,7 @@ repos:
   # eslint #
   ##########
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: "v8.29.0" # Use the sha / tag you want to point at
+    rev: "v9.13.0" # Use the sha / tag you want to point at
     hooks:
       - id: eslint
         files: \.[jt]sx?$ # *.js, *.jsx, *.ts and *.tsx
@@ -180,7 +180,7 @@ repos:
   ###########
 
   - repo: https://github.com/fluttercommunity/import_sorter
-    rev: "f350497a11b1285c695595049e95a420068e7a9f"
+    rev: "641f363d40a4ffb42ab577a43433fc48c5059b19"
     hooks:
       - id: flutter-import-sorter # use `dart-import-sorter` for a Dart project
 
@@ -188,7 +188,7 @@ repos:
   # go #
   ######
   - repo: https://github.com/golangci/golangci-lint
-    rev: "v1.50.1"
+    rev: "v1.61.0"
     hooks:
       - id: golangci-lint
 
@@ -204,7 +204,7 @@ repos:
   # ini #
   #######
   - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: "v2.5.0"
+    rev: "v2.14.0"
     hooks:
       - id: pretty-format-ini
         args: [--autofix]
@@ -230,7 +230,7 @@ repos:
   # jekyll #
   ##########
   - repo: https://github.com/klieret/jekyll-relative-url-check
-    rev: v2.0.1
+    rev: v2.0.2
     hooks:
       - id: jekyll-relative-url-check-html
       - id: jekyll-relative-url-check-markdown
@@ -239,7 +239,7 @@ repos:
   # jsonschema #
   ##############
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.19.2
+    rev: 0.29.4
     hooks:
       - id: check-jsonschema
         files: ^data/.*\.json$
@@ -269,7 +269,7 @@ repos:
   # kotlin #
   ##########
   - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: "v2.5.0"
+    rev: "v2.14.0"
     hooks:
       - id: pretty-format-kotlin
         args: [--autofix]
@@ -310,7 +310,7 @@ repos:
   # macOS #
   #########
   - repo: https://github.com/homebysix/pre-commit-macadmin
-    rev: v1.12.3
+    rev: v1.16.2
     hooks:
       - id: check-git-config-email
         args: ["--domains", "gmail.com", "johnpatrickroach.com"]
@@ -335,7 +335,7 @@ repos:
   # pip #
   #######
   - repo: https://github.com/peterdemin/pip-compile-multi
-    rev: v2.6.1
+    rev: v2.6.4
     hooks:
       - id: pip-compile-multi-verify
 
@@ -360,24 +360,24 @@ repos:
   ##########
 
   - repo: https://github.com/psf/black
-    rev: 22.12.0
+    rev: 24.10.0
     hooks:
       - id: black
 
   - repo: https://github.com/PyCQA/flake8
-    rev: 6.0.0
+    rev: 7.1.1
     hooks:
       - id: flake8
         exclude: ^docs/|setup.py
 
   - repo: https://github.com/PyCQA/isort
-    rev: 5.11.2
+    rev: 5.13.2
     hooks:
       - id: isort
         args: [--float-to-top, --profile black]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.991
+    rev: v1.12.1
     hooks:
       - id: mypy
         args: [--install-types, --non-interactive]
@@ -387,7 +387,7 @@ repos:
   # ruby #
   ########
   - repo: https://github.com/mattlqx/pre-commit-ruby
-    rev: v1.3.5
+    rev: v1.3.6
     hooks:
       - id: rubocop
       - id: foodcritic
@@ -399,7 +399,7 @@ repos:
   # rust #
   ########
   - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: "v2.5.0"
+    rev: "v2.14.0"
     hooks:
       - id: pretty-format-rust
         args: [--autofix]
@@ -408,7 +408,7 @@ repos:
   # sourcery #
   ############
   - repo: https://github.com/sourcery-ai/sourcery
-    rev: v1.0.2
+    rev: v1.23.0
     hooks:
       - id: sourcery
         # The best way to use Sourcery in a pre-commit hook:
@@ -420,13 +420,13 @@ repos:
   # toml #
   ########
   - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: "v2.5.0"
+    rev: "v2.14.0"
     hooks:
       - id: pretty-format-toml
         args: [--autofix]
 
   - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.5.3
+    rev: 1.8.7
     hooks:
       - id: nbqa-pyupgrade
         args: [--py37-plus]
@@ -434,7 +434,7 @@ repos:
         args: [--install-types, --non-interactive]
 
   - repo: https://github.com/pre-commit/pygrep-hooks
-    rev: v1.9.0 # Use the ref you want to point at
+    rev: v1.10.0 # Use the ref you want to point at
     hooks:
       - id: python-use-type-annotations
       - id: python-check-blanket-noqa
@@ -461,6 +461,6 @@ repos:
   # yaml #
   ########
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.28.0
+    rev: v1.35.1
     hooks:
       - id: yamllint
